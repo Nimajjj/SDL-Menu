@@ -1,0 +1,27 @@
+# ninja log v5
+1	359	6723666179344211	CMakeFiles/MenuSDL.dir/main.cpp.obj	70f66e34c956d319
+3	1181	6724565445191488	CMakeFiles/MenuSDL.dir/src/RenderWindow/RenderWindow.cpp.obj	e5ed9a4bbd8e6951
+3	915	6724570930851067	CMakeFiles/MenuSDL.dir/src/Button/Button.cpp.obj	258d0e76d224c68c
+1254	1446	6724570936146758	MenuSDL.exe	db435a6ad4eeab43
+17	950	6724570931160238	CMakeFiles/MenuSDL.dir/src/main.cpp.obj	aba627855c74c3b5
+0	305	6724229818123316	build.ninja	d5a70c1731173885
+15	1254	6724570934253462	CMakeFiles/MenuSDL.dir/src/Text/Text.cpp.obj	15e8be22efd11052
+20	1148	6724576584618216	CMakeFiles/MenuSDL.dir/src/main.cpp.obj	aba627855c74c3b5
+4	1331	6724576586457438	CMakeFiles/MenuSDL.dir/src/RenderWindow/RenderWindow.cpp.obj	e5ed9a4bbd8e6951
+1331	1552	6724576588648141	MenuSDL.exe	db435a6ad4eeab43
+22	1366	6724939343979678	CMakeFiles/MenuSDL.dir/src/main.cpp.obj	aba627855c74c3b5
+3	1569	6724939346004267	CMakeFiles/MenuSDL.dir/src/RenderWindow/RenderWindow.cpp.obj	e5ed9a4bbd8e6951
+1570	1848	6724939348764646	MenuSDL.exe	db435a6ad4eeab43
+19	1301	6724940956979457	CMakeFiles/MenuSDL.dir/src/main.cpp.obj	aba627855c74c3b5
+4	1467	6724940958624167	CMakeFiles/MenuSDL.dir/src/RenderWindow/RenderWindow.cpp.obj	e5ed9a4bbd8e6951
+1468	1640	6724940960313867	MenuSDL.exe	db435a6ad4eeab43
+5	1400	6724945996324527	CMakeFiles/MenuSDL.dir/src/Button/Button.cpp.obj	258d0e76d224c68c
+12	1425	6724945996583841	CMakeFiles/MenuSDL.dir/src/main.cpp.obj	aba627855c74c3b5
+9	1578	6724945998092237	CMakeFiles/MenuSDL.dir/src/RenderWindow/RenderWindow.cpp.obj	e5ed9a4bbd8e6951
+1579	1781	6724946000100573	MenuSDL.exe	db435a6ad4eeab43
+4	1179	6724946356931761	CMakeFiles/MenuSDL.dir/src/main.cpp.obj	aba627855c74c3b5
+1180	1394	6724946359052627	MenuSDL.exe	db435a6ad4eeab43
+4	1630	6724947096350154	CMakeFiles/MenuSDL.dir/src/main.cpp.obj	aba627855c74c3b5
+1632	1800	6724947098030060	MenuSDL.exe	db435a6ad4eeab43
+4	1727	6724947325691659	CMakeFiles/MenuSDL.dir/src/main.cpp.obj	aba627855c74c3b5
+1728	1949	6724947327872756	MenuSDL.exe	db435a6ad4eeab43
