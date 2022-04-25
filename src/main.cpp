@@ -1,13 +1,6 @@
 #include <iostream>
-#include <windows.h>
 #include <SDL.h>
 #include "Menu/Menu.h"
-
-// Window size
-#define WINDOW_WIDTH 640
-#define WINDOW_HEIGHT 480
-#define BUTTON_WIDTH 340
-#define BUTTON_HEIGHT 50
 
 // shits dont work
 void test1() { std::cout << "exercice 1" << std::endl; }
@@ -23,10 +16,9 @@ int main(int argc, char* args[]) {
     );
     bool running = true;
 
-
-
     // MAIN LOOP
     while (running) {
+        // EVENTS
         SDL_Event event;
         while (SDL_PollEvent(&event)) {
             switch (event.type) {
@@ -40,6 +32,7 @@ int main(int argc, char* args[]) {
             }
         }
 
+        // DRAW
         menu->run();
     }
 
