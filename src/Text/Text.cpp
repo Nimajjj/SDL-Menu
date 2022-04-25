@@ -34,11 +34,84 @@ void Text::draw(SDL_Renderer** _renderer) {
 
 void Text::_initAscii() {
     std::vector<std::vector<int>> space {
-        {0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0} };
+        { 0, 0, 0, 0, 0 },
+        { 0, 0, 0, 0, 0 },
+        { 0, 0, 0, 0, 0 },
+        { 0, 0, 0, 0, 0 },
+        { 0, 0, 0, 0, 0 } };
+    std::vector<std::vector<int>> tiret {
+        { 0, 0, 0, 0, 0 },
+        { 0, 0, 0, 0, 0 },
+        { 0, 1, 1, 1, 0 },
+        { 0, 0, 0, 0, 0 },
+        { 0, 0, 0, 0, 0 } };
+
+    std::vector<std::vector<int>> p {
+        { 1, 1, 1, 1, 0 },
+        { 1, 0, 0, 0, 1 },
+        { 1, 0, 0, 0, 1 },
+        { 1, 1, 1, 1, 0 },
+        { 1, 0, 0, 0, 0 } };
+    std::vector<std::vector<int>> o {
+        { 0, 1, 1, 1, 0 },
+        { 1, 0, 0, 0, 1 },
+        { 1, 0, 0, 0, 1 },
+        { 1, 0, 0, 0, 1 },
+        { 0, 1, 1, 1, 0 } };
+    std::vector<std::vector<int>> y {
+        { 1, 0, 0, 0, 1 },
+        { 0, 1, 0, 1, 0 },
+        { 0, 0, 1, 0, 0 },
+        { 0, 1, 0, 0, 0 },
+        { 1, 0, 0, 0, 0 } };
+    std::vector<std::vector<int>> n {
+        { 1, 0, 0, 0, 1 },
+        { 1, 1, 0, 0, 1 },
+        { 1, 0, 1, 0, 1 },
+        { 1, 0, 0, 1, 1 },
+        { 1, 0, 0, 0, 1 } };
+    std::vector<std::vector<int>> v {
+        { 1, 0, 0, 0, 1 },
+        { 1, 0, 0, 0, 1 },
+        { 1, 0, 0, 0, 1 },
+        { 0, 1, 0, 1, 0 },
+        { 0, 0, 1, 0, 0 } };
+    std::vector<std::vector<int>> a {
+        { 0, 1, 1, 1, 0 },
+        { 1, 0, 0, 0, 1 },
+        { 1, 1, 1, 1, 1 },
+        { 1, 0, 0, 0, 1 },
+        { 1, 0, 0, 0, 1 } };
+    std::vector<std::vector<int>> b {
+        { 1, 1, 1, 1, 0 },
+        { 1, 0, 0, 0, 1 },
+        { 1, 1, 1, 1, 0 },
+        { 1, 0, 0, 0, 1 },
+        { 1, 1, 1, 1, 0 } };
+    std::vector<std::vector<int>> l {
+        { 1, 0, 0, 0, 0 },
+        { 1, 0, 0, 0, 0 },
+        { 1, 0, 0, 0, 0 },
+        { 1, 0, 0, 0, 0 },
+        { 1, 1, 1, 1, 1 } };
+    std::vector<std::vector<int>> j {
+        { 1, 1, 1, 1, 1 },
+        { 0, 0, 1, 0, 0 },
+        { 0, 0, 1, 0, 0 },
+        { 1, 0, 1, 0, 0 },
+        { 1, 1, 1, 0, 0 } };
+    std::vector<std::vector<int>> m {
+        { 1, 0, 0, 0, 1 },
+        { 1, 1, 0, 1, 1 },
+        { 1, 0, 1, 0, 1 },
+        { 1, 0, 0, 0, 1 },
+        { 1, 0, 0, 0, 1 } };
+    std::vector<std::vector<int>> t {
+        { 1, 1, 1, 1, 1 },
+        { 0, 0, 1, 0, 0 },
+        { 0, 0, 1, 0, 0 },
+        { 0, 0, 1, 0, 0 },
+        { 0, 0, 1, 0, 0 } };
     std::vector<std::vector<int>> e {
         { 1, 1, 1, 1, 1 },
         { 1, 0, 0, 0, 0 },
@@ -69,6 +142,7 @@ void Text::_initAscii() {
         { 0, 0, 1, 0, 0 },
         { 0, 0, 1, 0, 0 },
         { 0, 1, 1, 1, 0 } };
+
     std::vector<std::vector<int>> n1 {
         { 0, 0, 1, 0, 0 },
         { 0, 1, 1, 0, 0 },
@@ -87,11 +161,23 @@ void Text::_initAscii() {
         { 0, 0, 1, 0, 0 },
         { 0, 0, 0, 1, 0 },
         { 0, 1, 1, 0, 0 } };
-
+// TODO : p, o, y, n, v, a, b, l, n, j, m
     // MISC //
     this->_charMap[' '] = space;
+    this->_charMap['-'] = tiret;
 
     // LETTERS //
+    this->_charMap['p'] = p;
+    this->_charMap['o'] = o;
+    this->_charMap['y'] = y;
+    this->_charMap['n'] = n;
+    this->_charMap['v'] = v;
+    this->_charMap['a'] = a;
+    this->_charMap['b'] = b;
+    this->_charMap['l'] = l;
+    this->_charMap['j'] = j;
+    this->_charMap['m'] = m;
+    this->_charMap['t'] = t;
     this->_charMap['e'] = e;
     this->_charMap['x'] = x;
     this->_charMap['r'] = r;
