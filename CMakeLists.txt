@@ -16,5 +16,5 @@ file(GLOB_RECURSE SOURCES
         src/Text/Text.cpp src/Text/Text.h
 )
 
-add_executable(MenuSDL ${SOURCES})
+add_executable(MenuSDL ${SOURCES} src/Menu/Menu.cpp src/Menu/Menu.h)
 target_link_libraries(${PROJECT_NAME} mingw32 SDL2main SDL2 SDL2_image)

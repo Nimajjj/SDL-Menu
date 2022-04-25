@@ -77,6 +77,13 @@ build CMakeFiles/MenuSDL.dir/src/main.cpp.obj: CXX_COMPILER__MenuSDL_Debug C$:/U
   OBJECT_DIR = CMakeFiles\MenuSDL.dir
   OBJECT_FILE_DIR = CMakeFiles\MenuSDL.dir\src
 
+build CMakeFiles/MenuSDL.dir/src/Menu/Menu.cpp.obj: CXX_COMPILER__MenuSDL_Debug C$:/Users/Ben/Documents/Dev/CPP/MenuSDL/src/Menu/Menu.cpp || cmake_object_order_depends_target_MenuSDL
+  DEP_FILE = CMakeFiles\MenuSDL.dir\src\Menu\Menu.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/Ben/Documents/Dev/CPP/MenuSDL/include/SDL2
+  OBJECT_DIR = CMakeFiles\MenuSDL.dir
+  OBJECT_FILE_DIR = CMakeFiles\MenuSDL.dir\src\Menu
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target MenuSDL
@@ -85,7 +92,7 @@ build CMakeFiles/MenuSDL.dir/src/main.cpp.obj: CXX_COMPILER__MenuSDL_Debug C$:/U
 #############################################
 # Link the executable MenuSDL.exe
 
-build MenuSDL.exe: CXX_EXECUTABLE_LINKER__MenuSDL_Debug CMakeFiles/MenuSDL.dir/src/Button/Button.cpp.obj CMakeFiles/MenuSDL.dir/src/RenderWindow/RenderWindow.cpp.obj CMakeFiles/MenuSDL.dir/src/Text/Text.cpp.obj CMakeFiles/MenuSDL.dir/src/main.cpp.obj
+build MenuSDL.exe: CXX_EXECUTABLE_LINKER__MenuSDL_Debug CMakeFiles/MenuSDL.dir/src/Button/Button.cpp.obj CMakeFiles/MenuSDL.dir/src/RenderWindow/RenderWindow.cpp.obj CMakeFiles/MenuSDL.dir/src/Text/Text.cpp.obj CMakeFiles/MenuSDL.dir/src/main.cpp.obj CMakeFiles/MenuSDL.dir/src/Menu/Menu.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lmingw32  -lSDL2main  -lSDL2  -lSDL2_image  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/Users/Ben/Documents/Dev/CPP/MenuSDL/lib/SDL2

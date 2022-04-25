@@ -161,7 +161,19 @@ void Text::_initAscii() {
         { 0, 0, 1, 0, 0 },
         { 0, 0, 0, 1, 0 },
         { 0, 1, 1, 0, 0 } };
-// TODO : p, o, y, n, v, a, b, l, n, j, m
+    std::vector<std::vector<int>> n4 {
+        { 0, 1, 0, 0, 0 },
+        { 0, 1, 0, 0, 0 },
+        { 0, 1, 0, 1, 0 },
+        { 0, 1, 1, 1, 0 },
+        { 0, 0, 0, 1, 0 } };
+    std::vector<std::vector<int>> n5 {
+        { 0, 1, 1, 1, 0 },
+        { 0, 1, 0, 0, 0 },
+        { 0, 1, 1, 0, 0 },
+        { 0, 0, 0, 1, 0 },
+        { 0, 1, 1, 0, 0 } };
+
     // MISC //
     this->_charMap[' '] = space;
     this->_charMap['-'] = tiret;
@@ -188,5 +200,7 @@ void Text::_initAscii() {
     this->_charMap['1'] = n1;
     this->_charMap['2'] = n2;
     this->_charMap['3'] = n3;
+    this->_charMap['4'] = n4;
+    this->_charMap['5'] = n5;
 
 }

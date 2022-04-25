@@ -86,7 +86,8 @@
 				0,
 				3,
 				5,
-				7
+				7,
+				8
 			]
 		}
 	],
@@ -151,7 +152,8 @@
 				0,
 				3,
 				5,
-				7
+				7,
+				8
 			]
 		},
 		{
@@ -161,7 +163,8 @@
 				1,
 				2,
 				4,
-				6
+				6,
+				9
 			]
 		}
 	],
@@ -210,6 +213,17 @@
 			"compileGroupIndex" : 0,
 			"path" : "src/main.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Menu/Menu.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/Menu/Menu.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
