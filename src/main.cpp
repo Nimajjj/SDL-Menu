@@ -25,9 +25,9 @@ int main(int argc, char* args[]) {
     auto master = new RenderWindow("Menu SDL v0.1", WINDOW_WIDTH, WINDOW_HEIGHT);
     bool running = true;
 
-    master->createText("ynov aix - tp3 poo", 50, 15, 5, new Color(255, 255, 255));
-    master->createText("roy pierre", 50, 50, 5, new Color(255, 255, 255));
-    master->createText("borello benjamin", 50, 80, 5, new Color(255, 255, 255));
+    master->createText("ynov aix - tp3 poo", 50, 15, 5, new Color(255, 255, 0));
+    master->createText("roy pierre", 50, 50, 5, new Color(0, 255, 255));
+    master->createText("borello benjamin", 50, 80, 5, new Color(255, 0, 255));
 
     master->createButton(new std::string("exercice 1"), 50, 150, BUTTON_WIDTH, BUTTON_HEIGHT, Color(50, 50, 50), test1);
     master->createButton(new std::string("exercice 2"), 50, 250, BUTTON_WIDTH, BUTTON_HEIGHT, Color(50, 50, 50), test2);
