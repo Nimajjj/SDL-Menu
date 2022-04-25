@@ -29,8 +29,8 @@ void Text::draw(SDL_Renderer** _renderer) {
             }
         }
     }
-
 }
+
 
 void Text::_initAscii() {
     std::vector<std::vector<int>> space {

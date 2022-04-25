@@ -2,7 +2,6 @@
 #include <windows.h>
 #include <SDL.h>
 #include "RenderWindow/RenderWindow.h"
-#include "Text/Text.h"
 
 // Window size
 #define WINDOW_WIDTH 640
