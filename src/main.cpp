@@ -9,6 +9,7 @@
 #define BUTTON_WIDTH 340
 #define BUTTON_HEIGHT 50
 
+// shits dont work
 void test1() {
     if(AllocConsole()) {
         freopen("CONOUT$", "w", stdout);

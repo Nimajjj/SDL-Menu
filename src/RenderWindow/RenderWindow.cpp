@@ -51,11 +51,11 @@ void RenderWindow::run() {
         txt->draw(&_renderer);
     }
 
-
     this->_display();
 }
 
-// CREATE BUTTON //
+
+// MANAGE SHITS //
 void RenderWindow::createButton(const std::string* text, const int& x, const int& y, const int& w, const int& h, const Color& fill, std::function<void(void)> onClick) {
     _buttons.push_back(new Button(*text, new SDL_Rect{x, y, w, h}, fill, onClick));
 }
@@ -64,12 +64,6 @@ void RenderWindow::createText(std::string text, int x, int y, int size, Color* c
     _texts.push_back(new Text(text, x, y, size, color));
 }
 
-
-// GETTER METHODS //
-SDL_Renderer*& RenderWindow::getRenderer() { return this->_renderer; }
-
-void RenderWindow::getMousePosition(int& x, int& y) const { SDL_GetMouseState(&x, &y); }
-
 void RenderWindow::updateButtons() const {
     for (auto bt : _buttons) {
         int x, y;
@@ -77,6 +71,13 @@ void RenderWindow::updateButtons() const {
         bt->update(x, y);
     }
 }
+
+
+// GETTERS //
+SDL_Renderer*& RenderWindow::getRenderer() { return this->_renderer; }
+
+void RenderWindow::getMousePosition(int& x, int& y) const { SDL_GetMouseState(&x, &y); }
+
 
 // PRIVATE METHODS //
 void RenderWindow::_initSDL() {
