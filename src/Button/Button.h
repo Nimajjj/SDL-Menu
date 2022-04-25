@@ -10,8 +10,8 @@
 
 /**
  * @def Button
- * @brief The Button class is a button that can be clicked and has a text label.
  *
+ * @brief The Button class is a button that can be clicked and has a text label.
  */
 class Button {
 public:
@@ -20,6 +20,7 @@ public:
 
     /**
      * @def draw(SDL_Renderer** _renderer)
+     *
      * @brief Draws the button to the screen
      *
      * @param renderer The renderer to draw to
@@ -28,8 +29,10 @@ public:
 
     /**
      * @def update(const int& x, const int& y)
+     *
      * @brief Call the _onClick function if the mouse is over the button.
      * This methods should be called in the main loop -> event loop.
+     *
      * @param x The x position of the mouse
      * @param y The y position of the mouse
      */

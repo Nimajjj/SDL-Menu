@@ -11,18 +11,16 @@
 
 /**
  * @def Text
+ *
  * @brief The Text class
  *
  * This class is used to create text objects and draw them.
- *
- * @author Ben
- * @version 1.0
- * @date 23/04/2022
  */
 class Text {
 public:
     /**
      * @def Text(std::string text, int x, int y, int size, Color* color)
+     *
      * @brief Construct a new Text object
      *
      * @param text The text to display
@@ -34,12 +32,14 @@ public:
 
     /**
      * @def ~Text()
+     *
      * @brief Destroy the Text object
      */
     ~Text() = default;
 
     /**
      * @def draw(SDL_Renderer** _renderer)
+     *
      * @brief Draw the text
      *
      * @param renderer The renderer to draw the text to
@@ -57,7 +57,9 @@ private:
 
     /**
      * @def _initAscii()
+     *
      * @brief init ascii matrix
+     *
      * I should certainly do it in an other way but anyway
      */
     void _initAscii();
