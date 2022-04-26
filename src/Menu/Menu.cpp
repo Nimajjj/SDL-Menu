@@ -5,6 +5,7 @@
 #include "Menu.h"
 
 Menu::Menu(std::string title, std::vector<std::string> subTitles, std::vector<std::function<void(void)>> exoFunctions) {
+    srand(time(NULL));
     _renderWindow = new RenderWindow(title, 640, 544);
 
     _renderWindow->createText(title, 30, 10, 5, new Color(255, 255, 255));

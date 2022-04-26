@@ -6,6 +6,7 @@
 #include <vector>
 #include <functional>
 #include <random>
+#include <time.h>
 #include "../RenderWindow/RenderWindow.h"
 #include "../Text/Text.h"
 

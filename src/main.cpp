@@ -10,9 +10,15 @@ void test3() { std::cout << "exercice 3" << std::endl; }
 int main(int argc, char* args[]) {
     // INITIALIZE
     Menu* menu = new Menu(
-        "tp3 poo - ynov aix",
-        std::vector<std::string>{"roy pierre", "borello benjamin"},
-        std::vector<std::function<void(void)>>{test1, test2, test3, test1, test3}
+        "tp3 poo - ynov aix",   // title
+        std::vector<std::string>{"roy pierre", "borello benjamin"}, // subtitle
+        std::vector<std::function<void(void)>>{ // exercices functions
+            test1,
+            test2,
+            test3,
+            test1,
+            test3
+        }
     );
     bool running = true;
 
