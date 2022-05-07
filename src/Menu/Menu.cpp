@@ -7,8 +7,9 @@
 Menu::Menu(std::string title, std::vector<std::string> subTitles, std::vector<std::function<void(void)>> exoFunctions) {
     srand(time(NULL));
     _renderWindow = new RenderWindow(title, 640, 544);
-
-    _renderWindow->createText(title, 30, 10, 5, new Color(255, 255, 255));
+    auto color = new Color(255, 255, 255);
+    _renderWindow->createText(title, 30, 10, 5, color);
+    delete color;
 
     int min = 150;
     int max = 250;
@@ -23,8 +24,9 @@ Menu::Menu(std::string title, std::vector<std::string> subTitles, std::vector<st
     }
 
     for (int i = 0; i < exoFunctions.size(); i++) {
+        auto text = new std::string("exercice " + std::to_string(i + 1));
         _renderWindow->createButton(
-                new std::string("exercice " + std::to_string(i + 1)),
+                text,
                 50,
                 (150 + (i * 75)),
                 340,
@@ -32,6 +34,7 @@ Menu::Menu(std::string title, std::vector<std::string> subTitles, std::vector<st
                 Color(50, 50, 50),
                 exoFunctions[i]
         );
+        delete text;
     }
 }
 
@@ -43,6 +46,6 @@ void Menu::run(){
     _renderWindow->run();
 }
 
-void Menu::updateButtons() {
-    _renderWindow->updateButtons();
+void Menu::updateButtons(bool click) {
+    _renderWindow->updateButtons(click);
 }

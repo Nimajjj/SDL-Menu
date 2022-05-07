@@ -64,11 +64,11 @@ void RenderWindow::createText(std::string text, int x, int y, int size, Color* c
     _texts.push_back(new Text(text, x, y, size, color));
 }
 
-void RenderWindow::updateButtons() const {
+void RenderWindow::updateButtons(bool click) const {
     for (auto bt : _buttons) {
         int x, y;
         this->getMousePosition(x, y);
-        bt->update(x, y);
+        bt->update(x, y, click);
     }
 }
 

@@ -26,6 +26,7 @@ void Text::draw(SDL_Renderer** _renderer) {
                 auto rect = new SDL_Rect{xPos, yPos, _fontSize, _fontSize};
                 SDL_SetRenderDrawColor( *_renderer, _color->r, _color->g, _color->b, _color->a );
                 SDL_RenderFillRect(*_renderer, rect);
+                delete rect;
             }
         }
     }

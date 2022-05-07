@@ -32,11 +32,13 @@ int main(int argc, char* args[]) {
                     running = false;
                     break;
                 case SDL_MOUSEBUTTONDOWN:
-                    menu->updateButtons();
+                    menu->updateButtons(true);
                 default:
                     break;
             }
         }
+
+        menu->updateButtons(false);
 
         // DRAW
         menu->run();

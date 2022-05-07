@@ -109,7 +109,7 @@ public:
      * @brief call _onClick for each button if mouse is over them.
      * To call during the event loop.
      */
-    void updateButtons() const;
+    void updateButtons(bool click) const;
 
 private:
     SDL_Window* _window;

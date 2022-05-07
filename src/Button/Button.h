@@ -36,11 +36,11 @@ public:
      * @param x The x position of the mouse
      * @param y The y position of the mouse
      */
-    void update(const int& x, const int& y);
+    void update(const int& x, const int& y, bool click);
 
 private:
     const std::string _text;
     const SDL_Rect* _rect;
-    const Color _fillColor;
+    Color _fillColor;
     const std::function<void(void)> _onClick;
 };
