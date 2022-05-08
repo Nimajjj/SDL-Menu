@@ -1,3 +1,0 @@
-C:/Users/Ben/Documents/Dev/CPP/MenuSDL/cmake-build-debug/CMakeFiles/MenuSDL.dir
-C:/Users/Ben/Documents/Dev/CPP/MenuSDL/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Ben/Documents/Dev/CPP/MenuSDL/cmake-build-debug/CMakeFiles/rebuild_cache.dir
