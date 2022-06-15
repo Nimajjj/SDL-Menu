@@ -18,3 +18,5 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
+/lib/SDL2
+/include/SDL2
